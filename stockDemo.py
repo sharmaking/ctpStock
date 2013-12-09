@@ -61,9 +61,9 @@ class MyMdApi(MdApi):
 inst = [b'600000']
 def main():
     user = MyMdApi(instruments=inst, 
-                             broker_id="08D2C5C1",
-                             investor_id="99668588",
-                             passwd="220330")
+                             broker_id="000",
+                             investor_id="000",
+                             passwd="000")
     user.Create("data")
     user.RegisterFront("tcp://asp-sim1-front1.financial-trading-platform.com:41213")
     user.Init()
